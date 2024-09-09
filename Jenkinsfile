@@ -20,7 +20,7 @@ pipeline {
 	       }
               }
             stage('ubuntu-agent-pipeline') {
-              agent {label 'ubuntu'}
+              agent {label 'slave2'}
               stages{
                 stage('Build') {
                 steps {
